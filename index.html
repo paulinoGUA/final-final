@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guardianes del Kichwa</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, main {
+      padding: 20px;
+      text-align: center;
+    }
+    .draggable {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #f9d976;
+      margin: 5px;
+      cursor: grab;
+      border-radius: 8px;
+    }
+    .dropzone {
+      border: 2px dashed #ccc;
+      min-height: 40px;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #f0f0f0;
+    }
+    select {
+      padding: 5px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ff914d;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    img {
+      max-width: 200px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌞 Guardianes del Kichwa 🌞</h1>
+    <p>Explora la riqueza de nuestra cultura con juegos interactivos en lengua kichwa.</p>
+    <button onclick="mostrarJuego('juego1')">Actividad 1</button>
+    <button onclick="mostrarJuego('juego2')">Actividad 2</button>
+    <button onclick="mostrarJuego('juego3')">Actividad 3</button>
+  </header>
+
+  <main>
+    <div id="contenedor-juego"></div>
+    <div id="retroalimentacion" style="font-weight: bold; margin-top: 20px;"></div>
+  </main>
+
+  <script src="juegos.js"></script>
+</body>
+</html>
